@@ -2,27 +2,27 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/main.css">
-    <meta name="viewport" content="width=device-width">
     <title>Haters Club</title>
+    <link href="bootstrap-3.3.4-dist/css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <div class="container">
+        <div class="col-md-12">
+            <h1>Haters Club</h1>
+            <nav>
+                <ul class="list-inline">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Nowhere</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 
-        <h1>Haters Club</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Nowhere</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="members">
+    <div class="container-fluid main">
+        <section class="members col-md-9 row text-center">
             <h3>The Members</h3>
             <h4>Who are these guys!?</h4>
-            <ul>
+            <ul class="list-unstyled">
                 <li>
                     <img src="img/483689_506060892764510_577574836_n.jpg">
                     <p>Darian<br/>Born hater, believes hate is the most honest feeling. Broad spectrum of hate victims ,does not discriminate.</p>
@@ -37,11 +37,11 @@
                 </li>
             </ul>
         </section>
-        <section class="hateds">
+        <div class="hateds col-md-9 row">
             <h3>Whom do we hate?</h3>
             <h4>People, things, ideas, preconceived notions that make our veins pop</h4>
             <br>
-            <ul>
+            <ul class="list-unstyled">
                 <li>
                     <h4>Religion</h4>
                     <img src="img/man.jpeg">
@@ -54,10 +54,12 @@
                     Hard to put into words, a unique combination of idiocy, hypocrisy and bad taste all rolled up into one proud, loud, moronic, disgusting, infatuated, living bag of wasted cells that pollutes the normal and spurs feeling so dark that not even the oceans deepest hidden hole has. Guess these words would work...   </p>
                 </li>
             </ul>
-        </section>
-    </main>
-    <footer>
+        </div>
+    </div>
+    <footer class="col-md-12 row">
         <h4>"Haters gonna hate"</h4>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="bootstrap-3.3.4-dist/js/bootstrap.js"
 </body>
 </html>
