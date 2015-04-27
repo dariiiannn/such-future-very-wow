@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Haters</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+</head>
+
+<body>
+    <header class="container-fluid">
+        <a href="/">
+            <img src="images/logo.png">
+        </a>
+    </header>
+
+
+
+
+    <div class="container" id="carousel">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/1.jpg">
+                </div>
+                <div class="swiper-slide"><img src="images/2.jpg">
+                </div>
+                <div class="swiper-slide"><img src="images/3.jpg">
+                </div>
+                <div class="swiper-slide"><img src="images/4.jpg">
+                </div>
+                <div class="swiper-slide"><img src="images/5.jpg">
+                </div>
+                <div class="swiper-slide"><img src="images/6.jpg">
+                </div>
+                <div class="swiper-slide"><img src="images/7.jpg">
+                </div>
+                <div class="swiper-slide"><img src="images/1.jpg">
+                </div>
+                <div class="swiper-slide"><img src="images/2.jpg">
+                </div>
+                <div class="swiper-slide"><img src="images/3.jpg">
+                </div>
+                <div class="swiper-slide"><img src="images/4.jpg">
+                </div>
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <footer class="footer">
+            <span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span>
+        </footer>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 3,
+            paginationClickable: true,
+            spaceBetween: 30
+        });
+    </script>
+
+</body>
+
+</html>
