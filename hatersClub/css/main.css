@@ -12,6 +12,10 @@ body {
     height: 100%;
     background-image: url(/images/background.jpg);
 }
+#logo{
+    background: url(/images/logo.png) center no-repeat;
+    height: 100%;
+}
 
 #left-half img {
     display: block;
