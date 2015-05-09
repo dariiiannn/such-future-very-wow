@@ -1,56 +1,94 @@
-html,
-body {
-    height: 100%;
-    overflow-x: hidden;
+.cool-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: url(/images/background.jpg) center;
+    z-index: 10000;
+    height: 15em;
+    overflow: hidden;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    transition: height 0.5s;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
-#content {
-    height: 90%;
+.cool-header .cool-header-inner {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 1.875em;
 }
 
-#left-half {
-    height: 100%;
-    background-image: url(/images/background.jpg);
-}
-#logo{
-    background: url(/images/logo.png) center no-repeat;
-    height: 100%;
+.cool-header img,
+.cool-header nav {
+    display: inline-block;
+    position: relative;
 }
 
-#left-half img {
+.cool-header img,
+.cool-header nav a {
+    line-height: 160px;
+}
+
+.cool-header img {
+    max-height: 100%;
+    width: auto;
+    float: left;
+}
+
+.cool-header nav {
+    float: right;
+}
+
+.cool-header nav a {
+    color: black;
+    font-weight: 700;
+    margin: 0 0 0 20px;
+    font-size: 1.1em;
+}
+
+.cool-header nav a:hover {
+    color: #333;
+}
+/* Transitions and class for reduced height */
+
+.cool-header img,
+.cool-header nav a {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.cool-header.cool-header-shrink {
+    height: 3em;
+}
+
+.cool-header.cool-header-shrink img,
+.cool-header.cool-header-shrink nav a {
+    line-height: 2em;
+}
+
+.cool-header.cool-header-shrink img {
+    font-size: 2em;
+}
+
+.cbp-so-scroller {
+    margin-top: 16em;
+}
+
+.cbp-so-section {
+    text-align: center;
+    margin-bottom: 3em;
+    position: relative;
+}
+
+.cbp-so-section img {
+    max-height: 35em;
+    max-width: 100%;
     display: block;
     margin: 0 auto;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
-#right-half {
-    height: 100%;
-    padding-top: 1%;
-}
-
-#left-half {
-    height: 100%
-}
-
-#right-half img {
-    max-height: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.slick-slider,
-.slick-slide,
-.slick-list,
-.slick-track {
-    height: 100%;
-    margin-bottom: 0;
-}
-
-@media(max-width:480px) {
-    body {
-        background-color: aliceblue;
-
-    }
-}
