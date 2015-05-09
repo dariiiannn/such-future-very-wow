@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: url(/images/background.jpg) center;
+    background-color: silver;
     z-index: 10000;
     height: 15em;
     overflow: hidden;
@@ -61,6 +61,9 @@
     -moz-transition: all 0.3s;
     transition: all 0.3s;
 }
+.cool-header p{
+    display: none;
+}
 
 .cool-header.cool-header-shrink {
     height: 3em;
@@ -73,6 +76,11 @@
 
 .cool-header.cool-header-shrink img {
     font-size: 2em;
+    display: none;
+}
+.cool-header.cool-header-shrink p {
+    font-size: 2em;
+    display: block;
 }
 
 .cbp-so-scroller {
